@@ -2,11 +2,23 @@
 
 Domain: cedarcapitalconsulting.com
 
-## Fastest Launch Option
+## Current Status
 
-Use Netlify for hosting and a domain registrar such as Cloudflare Registrar, Namecheap, GoDaddy, or Squarespace Domains for buying the domain.
+The website has been published to GitHub:
 
-## Step 1: Register the Domain
+```text
+https://github.com/hjr-thu24/cedar-capital-site
+```
+
+GitHub Pages is configured from the `main` branch and the custom domain is set to:
+
+```text
+cedarcapitalconsulting.com
+```
+
+The domain will not open until the domain is purchased and DNS records are added.
+
+## Step 1: Register the Domain Name
 
 Register:
 
@@ -16,32 +28,65 @@ cedarcapitalconsulting.com
 
 WHOIS check on June 30, 2026 showed no existing registration for this domain, but final availability must be confirmed at checkout.
 
-## Step 2: Deploy the Website on Netlify
+Recommended registrars:
 
-1. Go to https://app.netlify.com/drop
-2. Drag the whole `cedar-capital-site` folder into the upload area.
-3. After upload, Netlify will create a temporary site URL.
-4. Open Site configuration > Domain management.
-5. Add custom domain: `cedarcapitalconsulting.com`
+- Cloudflare Registrar
+- Namecheap
+- GoDaddy
+- Squarespace Domains
 
-## Step 3: Add DNS Records
+## Step 2: Add DNS Records
 
-At the company where the domain is registered, add these records:
+At the registrar where the domain is purchased, add these DNS records:
 
 ```text
 Type: A
 Name: @
-Value: 75.2.60.5
+Value: 185.199.108.153
+
+Type: A
+Name: @
+Value: 185.199.109.153
+
+Type: A
+Name: @
+Value: 185.199.110.153
+
+Type: A
+Name: @
+Value: 185.199.111.153
+
+Type: AAAA
+Name: @
+Value: 2606:50c0:8000::153
+
+Type: AAAA
+Name: @
+Value: 2606:50c0:8001::153
+
+Type: AAAA
+Name: @
+Value: 2606:50c0:8002::153
+
+Type: AAAA
+Name: @
+Value: 2606:50c0:8003::153
 
 Type: CNAME
 Name: www
-Value: cedarcapitalconsulting.com
+Value: hjr-thu24.github.io
 ```
 
-If Netlify shows different DNS instructions for the site, use Netlify's displayed values.
+Remove any default parked-domain A records that the registrar creates automatically.
 
-## Step 4: Enable HTTPS
+## Step 3: Enable HTTPS
 
-In Netlify, open Domain management > HTTPS and enable the free SSL certificate.
+After DNS propagates, open:
 
-DNS can take several minutes to 48 hours to fully propagate, though it often works much faster.
+```text
+https://github.com/hjr-thu24/cedar-capital-site/settings/pages
+```
+
+Then enable `Enforce HTTPS`.
+
+DNS can take several minutes to 24 hours to propagate.
