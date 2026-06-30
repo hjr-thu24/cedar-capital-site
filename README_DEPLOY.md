@@ -16,9 +16,43 @@ GitHub Pages is configured from the `main` branch and the custom domain is set t
 cedarcapitalconsulting.com
 ```
 
-The domain will not open until the domain is purchased and DNS records are added.
+Domain registration and DNS setup were completed on June 30, 2026.
 
-## Step 1: Register the Domain Name
+Working site:
+
+```text
+http://cedarcapitalconsulting.com/
+```
+
+HTTPS is pending GitHub's certificate issuance. After the certificate is available, enable `Enforce HTTPS` in GitHub Pages settings.
+
+## Completed Namecheap DNS Records
+
+```text
+Type: A
+Name: @
+Value: 185.199.108.153
+
+Type: A
+Name: @
+Value: 185.199.109.153
+
+Type: A
+Name: @
+Value: 185.199.110.153
+
+Type: A
+Name: @
+Value: 185.199.111.153
+
+Type: CNAME
+Name: www
+Value: hjr-thu24.github.io
+```
+
+## Original Setup Notes
+
+### Step 1: Register the Domain Name
 
 Register:
 
@@ -35,7 +69,7 @@ Recommended registrars:
 - GoDaddy
 - Squarespace Domains
 
-## Step 2: Add DNS Records
+### Step 2: Add DNS Records
 
 At the registrar where the domain is purchased, add these DNS records:
 
@@ -79,7 +113,7 @@ Value: hjr-thu24.github.io
 
 Remove any default parked-domain A records that the registrar creates automatically.
 
-## Step 3: Enable HTTPS
+### Step 3: Enable HTTPS
 
 After DNS propagates, open:
 
