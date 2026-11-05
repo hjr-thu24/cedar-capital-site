@@ -124,3 +124,13 @@ https://github.com/hjr-thu24/cedar-capital-site/settings/pages
 Then enable `Enforce HTTPS`.
 
 DNS can take several minutes to 24 hours to propagate.
+
+## November 2026 website update
+
+Investment consulting remains the core offering. Added inquiry sections for Business & Corporate, Real Estate & Leasing, and Business Immigration, plus a free initial consultation contact form. The supplied Cedar logo is stored in `assets/cedar-capital-logo.jpg`.
+
+### Contact form delivery
+
+The form uses FormSubmit to forward non-confidential inquiries to the existing public address, `daphne.zeng@ourcedar.com`. This is an external email forwarding provider; the form tells visitors this and discourages sensitive submissions. FormSubmit must be activated by the recipient before email delivery can be relied upon. Submit one non-confidential setup inquiry from the published domain, then follow the activation email sent by FormSubmit. Confirm receipt with a second inquiry after activation. No delivery confirmation has been independently verified during implementation.
+
+Native validation requires a name, email, service, message, and notice acknowledgment. A honeypot helps reduce spam. Submission failures retain visitor entries and show direct email as a fallback. No lawyer identity, admissions, response-time guarantee, or case outcome claims are published. Representation is subject to attorney availability, admission requirements, conflict checks, and a written engagement.
