@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261105b" />
   </head>
   <body>
     <header class="site-header" aria-label="Main navigation">
@@ -183,7 +183,7 @@
               <a href="mailto:daphne.zeng@ourcedar.com">daphne.zeng@ourcedar.com</a>
             </address>
           </div>
-          <form class="inquiry-form" id="inquiry-form" aria-describedby="inquiry-notice delivery-note" action="https://formsubmit.co/daphne.zeng@ourcedar.com" method="POST" data-endpoint="https://formsubmit.co/ajax/daphne.zeng@ourcedar.com">
+          <form class="inquiry-form" id="inquiry-form" aria-describedby="inquiry-notice delivery-note" action="https://formsubmit.co/daphne.zeng@ourcedar.com" method="POST" target="_blank" rel="noopener">
             <h3>Request a free initial consultation</h3>
             <p class="form-disclosure">Your first consultation is free. Contact us to discuss your needs and the services available for your matter. Any further work and fees will be agreed separately.</p>
             <input type="hidden" name="_subject" value="New Cedar Capital consultation inquiry" />
@@ -204,6 +204,7 @@
             <label class="consent"><input type="checkbox" name="consent" required /><span>I have read the notice above and agree to be contacted about my inquiry.</span></label>
             <button class="button primary" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
             <p class="form-disclosure" id="delivery-note">This form uses FormSubmit to forward your inquiry to our email. Please share only non-confidential information.</p>
+            <p class="form-disclosure">Submission opens in a new tab for verification. If the service is unavailable, <a id="email-fallback" href="mailto:daphne.zeng@ourcedar.com">send your inquiry using your email app</a>. Your entries stay on this page.</p>
             <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             <noscript><p>Please email <a href="mailto:daphne.zeng@ourcedar.com">daphne.zeng@ourcedar.com</a> directly.</p></noscript>
           </form>
@@ -216,6 +217,6 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20261105b"></script>
   </body>
 </html>

@@ -134,3 +134,7 @@ Investment consulting remains the core offering. Added inquiry sections for Busi
 The form uses FormSubmit to forward non-confidential inquiries to the existing public address, `daphne.zeng@ourcedar.com`. This is an external email forwarding provider; the form tells visitors this and discourages sensitive submissions. FormSubmit must be activated by the recipient before email delivery can be relied upon. Submit one non-confidential setup inquiry from the published domain, then follow the activation email sent by FormSubmit. Confirm receipt with a second inquiry after activation. No delivery confirmation has been independently verified during implementation.
 
 Native validation requires a name, email, service, message, and notice acknowledgment. A honeypot helps reduce spam. Submission failures retain visitor entries and show direct email as a fallback. No lawyer identity, admissions, response-time guarantee, or case outcome claims are published. Representation is subject to attorney availability, admission requirements, conflict checks, and a written engagement.
+
+### Contact submission repair
+
+Replaced AJAX with the documented standard FormSubmit POST flow in a new tab, so activation and verification responses are visible and the original entries remain available. Added an explicit email-app fallback that carries the entered details and versioned the script URL to refresh cached code. Actual recipient delivery still requires activation and receipt verification.
